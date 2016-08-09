@@ -1,0 +1,128 @@
+
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+    font-weight: inherit;
+    line-height: inherit;
+    color: #222;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+h1 {
+  font-size: 1.75rem; }
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem; }
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1rem; }
+
+.content a, .footer a {
+    border-bottom: 1px solid #ddd;
+}
+p{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+}
+.archive a:hover, .footer a:hover {
+    text-decoration: none;
+    border-bottom-color: #000;
+}
+.masthead {
+    width:100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    /*border-bottom: 1px solid #eee;*/
+}
+.masthead:after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 1px;
+    margin: 2rem auto;
+    background-color: #eee;
+    clear: both;
+}
+.masthead-container {
+    max-width: 1000px;
+    margin:0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li + li {
+  margin-left: .5rem;
+}
+.masthead-container:after {
+    clear: both;
+}
+
+.masthead-container:after, .masthead-container:before {
+    display: table;
+    content: " ";
+}
+@media (min-width: 34em) {
+  .masthead {
+    padding-top: 1rem;
+    text-align: right;
+  }
+  .masthead-title {
+    float: left;
+  }
+}
+@media screen and (min-width: 45em){
+.masthead .nav {
+    float:right;
+}
+}
+/* Archive
+-------------------------------------------------- */
+
+.archive {
+  margin-bottom: 3rem;
+}
+
+.archive-item {
+  margin-bottom: 1rem;
+  overflow: auto; /* clearfix */
+}
+
+.archive-item + .archive-title {
+  margin-top: 2rem;
+}
+
+.archive-item-date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 34rem) {
+  .archive-item {
+    margin-bottom: .5rem;
+  }
+  .archive-item-date {
+    float: right;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ .Hugo.Generator }}
+
+{{ if eq .URL "/" }}
+<title>{{ .Title }}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="website">
+{{ else }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+{{ end }}
+
+{{ if eq .URL "/" }}
+<meta property="description" content="{{ .Site.Params.description }}">
+{{ else }}
+  {{ if .Description }}
+  <meta property="description" content="{{ .Description }}">
+  {{ end }}
+{{ end }}
+
+{{ if .Keywords }}
+<meta property="keywords" content ="{{ delimit .Keywords ", " }}">
+{{ end }}
+
+{{ if .RSSlink }}
+<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
+
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css" media="all">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" media="all">
+<!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">-->
+<!--<link rel="stylesheet" href="https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css">-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css" media="all">
+<script src="{{ .Site.BaseURL }}js/prism.js"></script> 
+</head>
+
+  <body>
+    <div class="wrap">
+        <div class="masthead">
+        <div class="masthead-container">
+          <h2 class="masthead-title">
+          <a href="{{ .Site.BaseURL }}/" title="Home">{{ .Site.Title }}</a>
+          <small>{{ .Site.Params.Tagline }}</small>
+        </h2>
+        <ul class="nav">
+          <li><a href="/projects">projects</a></li>
+          <li><a href="/about">about</a></li>
+        </ul>
+        </div>
+      </div>  
+    <div class="container content">
+    

@@ -1,0 +1,25 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Hugo Poole"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = ""
+homepage = "http://siteforthistheme.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.14
+title = "Hugo Poole"
+
+[params]
+  Tagline = "The Jekyll Butler"
+
+[author]
+  name = "applythoughts"
+  homepage = "www.applythoughts.com"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
