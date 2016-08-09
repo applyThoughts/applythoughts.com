@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>applythoughts</title>
+    <link>http://www.applythoughts.com/</link>
+    <description>Recent content on applythoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2016 15:45:37 -0500</lastBuildDate>
+    <atom:link href="http://www.applythoughts.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://www.applythoughts.com/post/my-first-post/</link>
+      <pubDate>Tue, 09 Aug 2016 15:45:37 -0500</pubDate>
+      
+      <guid>http://www.applythoughts.com/post/my-first-post/</guid>
+      <description>&lt;p&gt;This is my first post. Testing out the hugo and github setup.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://www.applythoughts.com/about/</link>
+      <pubDate>Tue, 09 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.applythoughts.com/about/</guid>
+      <description>&lt;p&gt;I am a developer primarily focusing on web technologies.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

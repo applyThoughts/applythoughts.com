@@ -1,3 +1,4 @@
-baseurl = "http://www.applythoughts.com"
+baseurl = "http://www.applythoughts.com/"
 languageCode = "en-us"
 title = "applythoughts"
+theme = "hugo-poole"
